@@ -35,15 +35,6 @@ type TidbytPushJSON struct {
 	Background     bool   `json:"background"`
 }
 
-type LambdaEvent struct {
-	Message string `json:"message"`
-}
-
-type LambdaResponse struct {
-	Success bool `json:"success"`
-	Message string `json:"delivered_message"`
-}
-
 func starfile(content string) []byte {
 	starString :=
 		"load(\"render.star\", \"render\")\n" +
